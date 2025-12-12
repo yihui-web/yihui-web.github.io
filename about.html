@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 单片机与嵌入式协会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MCU & Embedded</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我们</a></li>
+                <li><a href="research.html">研究方向</a></li>
+                <li><a href="team.html">团队成员</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">关于我们</h1>
+            <p class="page-subtitle">了解单片机与嵌入式协会的发展历程与愿景</p>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a>
+                <span>/</span>
+                <span>关于我们</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 协会简介 -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <h2 class="section-title">协会简介</h2>
+                    <p>单片机与嵌入式协会是南阳理工学院的一个致力于嵌入式系统研究与开发的技术社团。我们专注于单片机应用开发、嵌入式系统设计、通信技术以及FPGA开发等领域。</p>
+                    <p>协会汇聚了一批热爱硬件开发的技术爱好者，通过项目实践、技术分享和竞赛参与，不断提升成员的专业技能和创新能力。</p>
+                    <p>我们的目标是培养具有扎实理论基础和丰富实践经验的嵌入式系统工程师，为物联网、智能硬件等领域输送优秀人才。</p>
+                </div>
+                <div class="intro-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                            <rect x="2" y="2" width="20" height="20" rx="3"/>
+                            <circle cx="8" cy="8" r="2"/>
+                            <circle cx="16" cy="8" r="2"/>
+                            <circle cx="8" cy="16" r="2"/>
+                            <circle cx="16" cy="16" r="2"/>
+                            <path d="M8 10v4M16 10v4M10 8h4M10 16h4"/>
+                        </svg>
+                        <span>嵌入式开发</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="50">50+</div>
+                    <div class="stat-label">团队成员</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <path d="M22 4L12 14.01l-3-3"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="30">30+</div>
+                    <div class="stat-label">完成项目</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="7"/>
+                            <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="10">10+</div>
+                    <div class="stat-label">获奖荣誉</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                    </div>
+                    <div class="stat-number" data-target="5">5+</div>
+                    <div class="stat-label">年发展历程</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我们的优势 -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title text-center">我们的优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-number">01</div>
+                    <h3>实践导向</h3>
+                    <p>注重动手能力培养，通过真实项目实践提升技术水平，让理论知识转化为实际技能。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">02</div>
+                    <h3>技术分享</h3>
+                    <p>定期举办技术讲座和工作坊，邀请业界专家分享前沿技术，营造浓厚的学习氛围。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">03</div>
+                    <h3>竞赛培训</h3>
+                    <p>组织参加各类电子设计竞赛，提供专业的赛前培训和技术指导，屡获佳绩。</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-number">04</div>
+                    <h3>资源丰富</h3>
+                    <p>配备完善的实验设备和开发工具，提供丰富的学习资料和技术文档支持。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 发展历程 -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title text-center">发展历程</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2019</div>
+                        <h3>协会成立</h3>
+                        <p>单片机与嵌入式协会正式成立，首批成员10人，开始了嵌入式技术探索之旅。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2020</div>
+                        <h3>初具规模</h3>
+                        <p>成员数量突破30人，完成首个校级项目，建立了基本的培训体系。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021</div>
+                        <h3>竞赛突破</h3>
+                        <p>首次参加全国电子设计竞赛并获奖，协会知名度大幅提升。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <h3>快速发展</h3>
+                        <p>研究方向拓展至FPGA和物联网领域，与多家企业建立合作关系。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <h3>稳步前行</h3>
+                        <p>成员超过50人，累计完成项目30余个，获得省级以上奖项10余项。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <h3>展望未来</h3>
+                        <p>持续深耕嵌入式领域，探索人工智能与嵌入式的结合，培养更多优秀人才。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span>单片机与嵌入式协会</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="research.html">研究方向</a>
+                    <a href="team.html">团队成员</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <p class="footer-copyright">&copy; 2024 单片机与嵌入式协会 · 南阳理工学院</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究方向 - 单片机与嵌入式协会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MCU & Embedded</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="research.html" class="active">研究方向</a></li>
+                <li><a href="team.html">团队成员</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">研究方向</h1>
+            <p class="page-subtitle">探索前沿技术，引领创新发展</p>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a>
+                <span>/</span>
+                <span>研究方向</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向详情 -->
+    <section class="research-detail">
+        <div class="container">
+            <!-- 单片机开发 -->
+            <div class="research-block">
+                <div class="research-header">
+                    <div class="research-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <circle cx="9" cy="9" r="1.5"/>
+                            <circle cx="15" cy="9" r="1.5"/>
+                            <circle cx="9" cy="15" r="1.5"/>
+                            <circle cx="15" cy="15" r="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="research-title-wrap">
+                        <h2>单片机开发</h2>
+                        <p class="research-tagline">MCU Development</p>
+                    </div>
+                </div>
+                <div class="research-body">
+                    <p class="research-desc">基于STM32、ESP32、Arduino等主流单片机平台，进行嵌入式应用程序开发。涵盖传感器驱动、电机控制、数据采集、人机交互等多种应用场景。</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">STM32</span>
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">51单片机</span>
+                        <span class="tech-tag">MSP430</span>
+                    </div>
+                    <div class="research-features">
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>GPIO/PWM/ADC外设驱动</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>传感器数据采集与处理</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>电机驱动与运动控制</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>LCD/OLED显示开发</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 嵌入式系统 -->
+            <div class="research-block">
+                <div class="research-header">
+                    <div class="research-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="6" width="20" height="12" rx="2"/>
+                            <path d="M6 10h4M14 10h4M6 14h12"/>
+                        </svg>
+                    </div>
+                    <div class="research-title-wrap">
+                        <h2>嵌入式系统</h2>
+                        <p class="research-tagline">Embedded Systems</p>
+                    </div>
+                </div>
+                <div class="research-body">
+                    <p class="research-desc">嵌入式Linux系统开发、RTOS实时操作系统应用、驱动程序开发，以及嵌入式软件架构设计与优化。培养系统级开发能力。</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">嵌入式Linux</span>
+                        <span class="tech-tag">FreeRTOS</span>
+                        <span class="tech-tag">RT-Thread</span>
+                        <span class="tech-tag">uC/OS</span>
+                        <span class="tech-tag">Bootloader</span>
+                    </div>
+                    <div class="research-features">
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>Linux系统移植与裁剪</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>设备驱动程序开发</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>RTOS任务调度与同步</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>Bootloader开发</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 通信技术 -->
+            <div class="research-block">
+                <div class="research-header">
+                    <div class="research-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+                            <path d="M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                        </svg>
+                    </div>
+                    <div class="research-title-wrap">
+                        <h2>通信技术</h2>
+                        <p class="research-tagline">Communication Technology</p>
+                    </div>
+                </div>
+                <div class="research-body">
+                    <p class="research-desc">无线通信协议（WiFi、蓝牙、LoRa、ZigBee）、有线通信接口（UART、SPI、I2C、CAN）的应用开发与协议分析。构建物联网通信基础。</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">WiFi</span>
+                        <span class="tech-tag">蓝牙/BLE</span>
+                        <span class="tech-tag">LoRa</span>
+                        <span class="tech-tag">ZigBee</span>
+                        <span class="tech-tag">CAN总线</span>
+                        <span class="tech-tag">MQTT</span>
+                    </div>
+                    <div class="research-features">
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>无线通信模块应用</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>通信协议栈开发</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>物联网云平台对接</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>工业总线应用</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FPGA开发 -->
+            <div class="research-block">
+                <div class="research-header">
+                    <div class="research-icon-large">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M7 7h3v3H7zM14 7h3v3h-3zM7 14h3v3H7zM14 14h3v3h-3z"/>
+                        </svg>
+                    </div>
+                    <div class="research-title-wrap">
+                        <h2>FPGA开发</h2>
+                        <p class="research-tagline">FPGA Development</p>
+                    </div>
+                </div>
+                <div class="research-body">
+                    <p class="research-desc">基于Xilinx、Intel(Altera)等FPGA平台，进行数字逻辑设计、高速信号处理、图像处理加速等应用开发。掌握硬件描述语言与数字系统设计。</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Xilinx</span>
+                        <span class="tech-tag">Intel FPGA</span>
+                        <span class="tech-tag">Verilog</span>
+                        <span class="tech-tag">VHDL</span>
+                        <span class="tech-tag">Vivado</span>
+                        <span class="tech-tag">Quartus</span>
+                    </div>
+                    <div class="research-features">
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>数字逻辑设计与仿真</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>高速信号处理</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>图像/视频处理加速</span>
+                        </div>
+                        <div class="rf-item">
+                            <div class="rf-icon">✓</div>
+                            <span>FPGA+ARM异构设计</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目展示 -->
+    <section class="projects-preview">
+        <div class="container">
+            <h2 class="section-title text-center">项目案例</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="12" cy="12" r="4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>智能温室控制系统</h3>
+                        <p>基于STM32的温室环境监测与自动控制系统，实现温湿度、光照、土壤湿度等参数的实时监测与智能调控。</p>
+                        <div class="project-tags">
+                            <span>STM32</span>
+                            <span>传感器</span>
+                            <span>物联网</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>四旋翼飞行器</h3>
+                        <p>自主设计的四旋翼无人机，包含飞控算法、姿态解算、遥控通信等完整功能，支持自稳飞行与航点规划。</p>
+                        <div class="project-tags">
+                            <span>飞控</span>
+                            <span>PID</span>
+                            <span>无线通信</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FPGA图像处理平台</h3>
+                        <p>基于FPGA的实时图像处理系统，实现边缘检测、图像滤波、目标识别等算法的硬件加速。</p>
+                        <div class="project-tags">
+                            <span>FPGA</span>
+                            <span>图像处理</span>
+                            <span>Verilog</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span>单片机与嵌入式协会</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="research.html">研究方向</a>
+                    <a href="team.html">团队成员</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <p class="footer-copyright">&copy; 2024 单片机与嵌入式协会 · 南阳理工学院</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

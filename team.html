@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队成员 - 单片机与嵌入式协会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MCU & Embedded</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="research.html">研究方向</a></li>
+                <li><a href="team.html" class="active">团队成员</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">团队成员</h1>
+            <p class="page-subtitle">优秀的团队，创造无限可能</p>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a>
+                <span>/</span>
+                <span>团队成员</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 指导教师 -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="section-title text-center">指导教师</h2>
+            <div class="advisors-grid">
+                <div class="advisor-card">
+                    <div class="advisor-avatar">
+                        <div class="avatar-large">张</div>
+                    </div>
+                    <div class="advisor-info">
+                        <h3>张老师</h3>
+                        <p class="advisor-title">指导教师 · 副教授</p>
+                        <p class="advisor-desc">主要研究方向为嵌入式系统与物联网技术，负责协会整体规划与技术指导，指导学生参加各类电子设计竞赛。</p>
+                        <div class="advisor-expertise">
+                            <span>嵌入式系统</span>
+                            <span>物联网</span>
+                            <span>智能控制</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心成员 -->
+    <section class="team-section team-core">
+        <div class="container">
+            <h2 class="section-title text-center">核心成员</h2>
+            <div class="team-grid">
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">李</div>
+                        <div class="member-badge">会长</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>李明</h3>
+                        <p class="member-role">会长</p>
+                        <p class="member-desc">主攻STM32开发与嵌入式Linux，负责协会日常管理与技术方向规划。</p>
+                        <div class="member-skills">
+                            <span>STM32</span>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">王</div>
+                        <div class="member-badge">技术部长</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>王华</h3>
+                        <p class="member-role">技术部长</p>
+                        <p class="member-desc">专注FPGA与数字信号处理，负责技术培训与项目技术支持。</p>
+                        <div class="member-skills">
+                            <span>FPGA</span>
+                            <span>Verilog</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">刘</div>
+                        <div class="member-badge">项目负责人</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>刘芳</h3>
+                        <p class="member-role">项目负责人</p>
+                        <p class="member-desc">负责物联网项目开发与管理，擅长无线通信与云平台对接。</p>
+                        <div class="member-skills">
+                            <span>物联网</span>
+                            <span>ESP32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">陈</div>
+                        <div class="member-badge">硬件组长</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>陈强</h3>
+                        <p class="member-role">硬件组长</p>
+                        <p class="member-desc">负责PCB设计与硬件调试，精通电路设计与焊接工艺。</p>
+                        <div class="member-skills">
+                            <span>PCB设计</span>
+                            <span>硬件调试</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">赵</div>
+                        <div class="member-badge">软件组长</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>赵雪</h3>
+                        <p class="member-role">软件组长</p>
+                        <p class="member-desc">负责嵌入式软件开发与算法实现，擅长C/C++与Python编程。</p>
+                        <div class="member-skills">
+                            <span>C/C++</span>
+                            <span>算法</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar">
+                        <div class="avatar-placeholder">周</div>
+                        <div class="member-badge">宣传部长</div>
+                    </div>
+                    <div class="member-info">
+                        <h3>周洋</h3>
+                        <p class="member-role">宣传部长</p>
+                        <p class="member-desc">负责协会宣传与活动策划，管理公众号与招新工作。</p>
+                        <div class="member-skills">
+                            <span>新媒体</span>
+                            <span>活动策划</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 组织架构 -->
+    <section class="org-structure">
+        <div class="container">
+            <h2 class="section-title text-center">组织架构</h2>
+            <div class="org-chart">
+                <div class="org-level org-top">
+                    <div class="org-node org-advisor">
+                        <span>指导教师</span>
+                    </div>
+                </div>
+                <div class="org-connector"></div>
+                <div class="org-level">
+                    <div class="org-node org-president">
+                        <span>会长</span>
+                    </div>
+                </div>
+                <div class="org-connector"></div>
+                <div class="org-level org-departments">
+                    <div class="org-node">
+                        <span>技术部</span>
+                        <small>技术培训、项目支持</small>
+                    </div>
+                    <div class="org-node">
+                        <span>项目部</span>
+                        <small>项目管理、竞赛组织</small>
+                    </div>
+                    <div class="org-node">
+                        <span>硬件组</span>
+                        <small>电路设计、PCB制作</small>
+                    </div>
+                    <div class="org-node">
+                        <span>软件组</span>
+                        <small>程序开发、算法实现</small>
+                    </div>
+                    <div class="org-node">
+                        <span>宣传部</span>
+                        <small>宣传推广、活动策划</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 加入我们 -->
+    <section class="join-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>成为我们的一员</h2>
+                <p>无论你是零基础新手还是有经验的开发者，这里都有适合你的位置</p>
+                <a href="contact.html" class="btn btn-primary">立即加入</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span>单片机与嵌入式协会</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="research.html">研究方向</a>
+                    <a href="team.html">团队成员</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <p class="footer-copyright">&copy; 2024 单片机与嵌入式协会 · 南阳理工学院</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

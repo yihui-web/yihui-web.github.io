@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单片机与嵌入式协会 | 南阳理工学院</title>
+    <meta name="description" content="南阳理工学院单片机与嵌入式协会 - 探索硬件世界，创造无限可能">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MCU & Embedded</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="research.html">研究方向</a></li>
+                <li><a href="team.html">团队成员</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="circuit-lines"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                南阳理工学院
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">单片机与嵌入式</span>
+                <span class="title-line highlight">协会</span>
+            </h1>
+            <p class="hero-subtitle">探索硬件世界，创造无限可能</p>
+            <p class="hero-desc">专注于嵌入式系统开发 · 单片机应用 · 通信技术 · FPGA设计</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn btn-primary">
+                    <span>了解更多</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="contact.html" class="btn btn-outline">
+                    <span>加入我们</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8zM20 8v6M23 11h-6"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特色展示 -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <circle cx="9" cy="9" r="1.5"/>
+                            <circle cx="15" cy="9" r="1.5"/>
+                            <circle cx="9" cy="15" r="1.5"/>
+                            <circle cx="15" cy="15" r="1.5"/>
+                            <line x1="4" y1="12" x2="0" y2="12"/>
+                            <line x1="24" y1="12" x2="20" y2="12"/>
+                            <line x1="12" y1="4" x2="12" y2="0"/>
+                            <line x1="12" y1="24" x2="12" y2="20"/>
+                        </svg>
+                    </div>
+                    <h3>单片机开发</h3>
+                    <p>STM32 / ESP32 / Arduino</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <path d="M6 8h4M6 12h8M6 16h6"/>
+                            <circle cx="18" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>嵌入式系统</h3>
+                    <p>Linux / RTOS / 驱动开发</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01M5.111 13.404a10 10 0 0113.778 0M2.111 10.404a14.5 14.5 0 0119.778 0"/>
+                            <circle cx="12" cy="20" r="1"/>
+                        </svg>
+                    </div>
+                    <h3>通信技术</h3>
+                    <p>WiFi / 蓝牙 / LoRa / CAN</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M7 7h3v3H7zM14 7h3v3h-3zM7 14h3v3H7zM14 14h3v3h-3z"/>
+                            <line x1="12" y1="3" x2="12" y2="21"/>
+                            <line x1="3" y1="12" x2="21" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>FPGA开发</h3>
+                    <p>Xilinx / Intel / 数字设计</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 协会亮点 -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-content">
+                <div class="highlights-text">
+                    <h2 class="section-title">为什么选择我们？</h2>
+                    <p class="highlights-desc">
+                        单片机与嵌入式协会是南阳理工学院最具技术氛围的学生社团之一。
+                        我们专注于培养学生的实践能力，提供从入门到精通的完整学习路径。
+                    </p>
+                    <div class="highlights-list">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>系统化培训</strong>
+                                <span>从基础到进阶的完整课程体系</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>项目实战</strong>
+                                <span>真实项目驱动的学习方式</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>竞赛指导</strong>
+                                <span>电子设计大赛等专业指导</span>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div class="highlight-text">
+                                <strong>资源共享</strong>
+                                <span>开发板、元器件等硬件资源</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 32px;">
+                        <span>了解更多</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="highlights-visual">
+                    <div class="visual-card">
+                        <div class="visual-icon">🔧</div>
+                        <div class="visual-number">50+</div>
+                        <div class="visual-label">活跃成员</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-icon">🏆</div>
+                        <div class="visual-number">10+</div>
+                        <div class="visual-label">获奖项目</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-icon">📚</div>
+                        <div class="visual-number">20+</div>
+                        <div class="visual-label">培训课程</div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="visual-icon">💡</div>
+                        <div class="visual-number">5+</div>
+                        <div class="visual-label">年发展历程</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 快速入口 -->
+    <section class="quick-links">
+        <div class="container">
+            <h2 class="section-title text-center">快速导航</h2>
+            <div class="quick-grid">
+                <a href="about.html" class="quick-card">
+                    <div class="quick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <div class="quick-info">
+                        <h3>关于我们</h3>
+                        <p>了解协会的发展历程与愿景</p>
+                    </div>
+                    <div class="quick-arrow">→</div>
+                </a>
+                <a href="research.html" class="quick-card">
+                    <div class="quick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <div class="quick-info">
+                        <h3>研究方向</h3>
+                        <p>探索我们的技术研究领域</p>
+                    </div>
+                    <div class="quick-arrow">→</div>
+                </a>
+                <a href="team.html" class="quick-card">
+                    <div class="quick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                        </svg>
+                    </div>
+                    <div class="quick-info">
+                        <h3>团队成员</h3>
+                        <p>认识我们优秀的团队伙伴</p>
+                    </div>
+                    <div class="quick-arrow">→</div>
+                </a>
+                <a href="contact.html" class="quick-card">
+                    <div class="quick-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <path d="M22 6l-10 7L2 6"/>
+                        </svg>
+                    </div>
+                    <div class="quick-info">
+                        <h3>联系我们</h3>
+                        <p>加入协会或与我们取得联系</p>
+                    </div>
+                    <div class="quick-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区域 -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好加入我们了吗？</h2>
+                <p>无论你是零基础新手还是有经验的开发者，我们都欢迎你的加入！</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>立即加入</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="research.html" class="btn btn-outline">了解研究方向</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span>单片机与嵌入式协会</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="research.html">研究方向</a>
+                    <a href="team.html">团队成员</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <p class="footer-copyright">&copy; 2024 单片机与嵌入式协会 · 南阳理工学院</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

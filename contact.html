@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 单片机与嵌入式协会</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">MCU & Embedded</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="research.html">研究方向</a></li>
+                <li><a href="team.html">团队成员</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
+            </ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面头部 -->
+    <section class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container">
+            <h1 class="page-title">联系我们</h1>
+            <p class="page-subtitle">欢迎与我们取得联系</p>
+            <div class="breadcrumb">
+                <a href="index.html">首页</a>
+                <span>/</span>
+                <span>联系我们</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- 联系方式 -->
+                <div class="contact-info-panel">
+                    <h2>联系方式</h2>
+                    <div class="contact-list">
+                        <div class="contact-item-large">
+                            <div class="contact-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>地址</h4>
+                                <p>南阳理工学院 汇森楼 601</p>
+                                <span class="contact-note">工作日 9:00-21:00 开放</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <path d="M22 6l-10 7L2 6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>邮箱</h4>
+                                <p>2673394479@qq.com</p>
+                                <span class="contact-note">24小时内回复</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item-large">
+                            <div class="contact-icon-wrap qq">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-detail">
+                                <h4>QQ群</h4>
+                                <p>1021262835</p>
+                                <span class="contact-note">扫码或搜索群号加入</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 二维码区域 -->
+                    <div class="qr-section">
+                        <h3>扫码加入</h3>
+                        <div class="qr-codes">
+                            <div class="qr-item">
+                                <div class="qr-placeholder">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="3" y="3" width="7" height="7"/>
+                                        <rect x="14" y="3" width="7" height="7"/>
+                                        <rect x="3" y="14" width="7" height="7"/>
+                                        <rect x="14" y="14" width="4" height="4"/>
+                                        <path d="M18 14h3v3M14 18h3v3"/>
+                                    </svg>
+                                </div>
+                                <span>QQ群二维码</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 加入我们 -->
+                <div class="join-panel">
+                    <div class="join-card">
+                        <div class="join-header">
+                            <h2>加入我们</h2>
+                            <p>欢迎对嵌入式开发感兴趣的同学加入！</p>
+                        </div>
+                        <div class="join-content">
+                            <div class="join-requirement">
+                                <h3>招新要求</h3>
+                                <ul>
+                                    <li>
+                                        <span class="check-icon">✓</span>
+                                        <span>对嵌入式/单片机/FPGA有浓厚兴趣</span>
+                                    </li>
+                                    <li>
+                                        <span class="check-icon">✓</span>
+                                        <span>具备基本的C语言编程基础（优先）</span>
+                                    </li>
+                                    <li>
+                                        <span class="check-icon">✓</span>
+                                        <span>有较强的学习能力和团队协作精神</span>
+                                    </li>
+                                    <li>
+                                        <span class="check-icon">✓</span>
+                                        <span>能够保证一定的课余时间参与活动</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="join-benefits">
+                                <h3>你将收获</h3>
+                                <div class="benefits-grid">
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                            </svg>
+                                        </div>
+                                        <span>系统的技术培训</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                                                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                                            </svg>
+                                        </div>
+                                        <span>丰富的项目经验</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <circle cx="12" cy="8" r="7"/>
+                                                <path d="M8.21 13.89L7 23l5-3 5 3-1.21-9.12"/>
+                                            </svg>
+                                        </div>
+                                        <span>竞赛指导机会</span>
+                                    </div>
+                                    <div class="benefit-item">
+                                        <div class="benefit-icon">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                                <circle cx="9" cy="7" r="4"/>
+                                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                                            </svg>
+                                        </div>
+                                        <span>志同道合的伙伴</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="join-steps">
+                                <h3>加入流程</h3>
+                                <div class="steps">
+                                    <div class="step">
+                                        <div class="step-number">1</div>
+                                        <div class="step-content">
+                                            <h4>加入QQ群</h4>
+                                            <p>搜索群号 1021262835 申请加入</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">2</div>
+                                        <div class="step-content">
+                                            <h4>填写报名表</h4>
+                                            <p>在群内获取并填写报名表</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">3</div>
+                                        <div class="step-content">
+                                            <h4>参加面试</h4>
+                                            <p>简单的技术交流与兴趣了解</p>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div class="step-number">4</div>
+                                        <div class="step-content">
+                                            <h4>正式入会</h4>
+                                            <p>通过后即可成为正式成员</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title text-center">常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>零基础可以加入吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>当然可以！我们欢迎所有对嵌入式感兴趣的同学，会提供从入门到进阶的系统培训。只要你有学习的热情，零基础完全没有问题。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>每周需要投入多少时间？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>建议每周至少投入4-6小时进行学习和实践。我们会在周末安排培训活动，平时可以自主安排学习时间。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>需要自己购买开发板吗？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>协会配备了常用的开发板和工具，可供成员借用学习。当然，如果你想更方便地在宿舍练习，也可以自行购买入门级开发板。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>什么时候招新？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们每学期初（9月和3月）会组织集中招新，其他时间也接受报名。欢迎随时加入QQ群了解详情。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">⚡</span>
+                    <span>单片机与嵌入式协会</span>
+                </div>
+                <div class="footer-links">
+                    <a href="about.html">关于我们</a>
+                    <a href="research.html">研究方向</a>
+                    <a href="team.html">团队成员</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <p class="footer-copyright">&copy; 2024 单片机与嵌入式协会 · 南阳理工学院</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
